@@ -7,7 +7,8 @@
 
     <body>
         <button onclick="show()" id="btn">Click for secret</button>
-        <img id="potato" src="DALL·E 2023-04-14 10.19.05 - a picture of a potato.png" width="30%" height="30%"/>
+        <img id="potato" src="DALL·E 2023-04-14 10.19.05 - a picture of a potato.png" width="40%" height="40%"/>
+        <p>😊</p>
         <script>
             function show() {
                 document.getElementById('potato')
@@ -21,16 +22,31 @@
         <style>
             button {
                 size: 30px;
-                align-items: center;
+                margin-left: 40%;
+
             }
             img {
                 display: none;
-                align-items: center;
-                justify-content: center;
+
+
                 
             }
             body {
                 background-color: #696969 ;
+            }
+
+            @media (max-width: 500px) {
+                img{
+                    width: 70%;
+                    height: 70%;
+                    padding-left: 15%;
+                    padding-top: 50%;
+                    margin: 0px;
+
+                }
+                p{
+                    text-align: center;
+                }
             }
         </style>
 
